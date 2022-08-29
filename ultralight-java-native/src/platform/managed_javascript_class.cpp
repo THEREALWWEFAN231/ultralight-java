@@ -558,7 +558,7 @@ namespace ultralight_java {
             env->CallLongMethod(ret, runtime.object_with_handle.get_handle_method));
         env->CallVoidMethod(java_lock, runtime.javascript_context_lock.unlock_method);
         env->PopLocalFrame(nullptr);
-        JSValueProtect(ctx, value);
+        //JSValueProtect(ctx, value);
 
         return value;
     }
